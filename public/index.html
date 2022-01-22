@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>PokeSearch</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="header_Title">
+        <h1 class="header_h1">Pokesearch</h1>
+        <img class="header_img" src="/src/pokeball.png" alt="pokeball" />
+      </section>
+      <section>
+        <form class="form" action="">
+          <label class="input_container" for="nombre">
+            <span class="lens_icon"></span>
+            <input
+              class="search_text"
+              type="text"
+              id="nombre"
+              placeholder="Search a pokemon"
+            />
+          </label>
+        </form>
+      </section>
+    </header>
+    <section class="main">
+      <div class="Type_of_search">
+        <a href="">Pokemons</a>
+      <a href="">Habilities</a>
+      <a href="">Moves</a>
+      </div>
+      <div class="Pokemons-container" id="cards">
+      </div>
+    </section>
+    <script src="/src/index.js"></script>
+  </body>
+</html>

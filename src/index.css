@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  height: 15rem;
+  width: 100%;
+  background-color: #f16d71;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.header_Title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_h1{
+  color: whitesmoke;
+  font-size: 3.2rem;
+}
+.header_img {
+  width: 5rem;
+}
+.form{
+  display: flex;
+  justify-content: center;
+}
+.input_container{
+  width: 33rem;
+  height: 3rem;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255,0.5);
+}
+.lens_icon{
+  background-image: url('/src/lupa.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.search_text{
+  width: 28rem;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  background-color: rgba(245, 116, 196, 0.08);
+}
+.search_text::placeholder{
+  color: whitesmoke;
+}
+.Type_of_search{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Type_of_search a {
+  text-decoration: none;
+  color: black;
+}
+.Pokemons-container{
+  margin-top: 2rem;
+  height: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  background-color: #f16d71;
+  height: 10rem;
+  width: 19rem;
+  border-radius: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
