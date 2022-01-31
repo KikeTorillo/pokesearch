@@ -64,10 +64,17 @@ header{
 }
 
 .card--pokemon-detail {
+    margin-top: 1rem;
     padding-top: 2rem;
     height: 15rem;
-    width: 90%;
+    width: 30rem;
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
+    background-color: #84A98C;
+    border-radius: 2rem;
+}
+
+.card--pokemon-detail div h4 {
+    color: #CAD2C5;
 }
