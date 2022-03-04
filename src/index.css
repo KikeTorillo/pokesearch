@@ -8,11 +8,15 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #1d2951;
+}
+
 .header {
   height: 15rem;
   width: 100%;
   background-color: #f16d71;
-  border-radius: 1rem;
+  border-radius: 0rem 0rem 5rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -22,6 +26,11 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+
+.header_Title a {
+  text-decoration: none;
+}
+
 .header_h1{
   color: whitesmoke;
   font-size: 3.2rem;
@@ -44,6 +53,7 @@ html {
   justify-content: space-between;
   background-color: rgba(255, 255, 255,0.5);
 }
+
 .lens_icon{
   background-image: url('/src/lupa.png');
   background-repeat: no-repeat;
@@ -72,17 +82,95 @@ html {
   text-decoration: none;
   color: black;
 }
-.Pokemons-container{
-  margin-top: 2rem;
-  height: 50rem;
-  display: flex;
-  justify-content: space-evenly;
+
+.main {
+  padding-top: 5rem;
+  margin: 0 auto;
+  max-width: 200rem;
+  display: grid;
+  background-color: #1d2951;
+  grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
+  grid-auto-rows: 30rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 3rem;
+  column-gap: 3rem;
 }
-.card {
+
+.pokemon {
   background-color: #f16d71;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 1rem 1rem 7rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(5,6rem);
+  grid-template-rows: repeat(5,6rem);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+
+.nopokemon {
+  background-color: #FE5F55;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.pokemon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  grid-area: 1/2/4/5;
+}
+
+.pokemon h2 {
+  grid-area: 4/2/5/4;
+}
+
+.pokemon h3 {
+  grid-area: 4/3/5/5;
+}
+
+.load_more {
   height: 10rem;
-  width: 19rem;
-  border-radius: 2rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 15rem;
+  grid-template-rows:  5rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.load_more button {
+  border-radius: 2.5rem;
+  background-color: #590d22;
+  border: none;
+  color: white;
+  font-family: 'Poppins','sans serif';
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .input_container{
+    width: 40rem;
+    height: 5rem;
+  }
+
+  .search_text::placeholder{
+    font-size: 1.6rem;
+  }
+
+  .search_text{
+    font-size: 1.6rem;
+  }
+
 }
 
 
