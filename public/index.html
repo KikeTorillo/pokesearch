@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
     <header class="header">
       <section class="header_Title">
         <a href=""><h1 class="header_h1">Pokesearch</h1></a>
-        <img class="header_img" src="/src/Poké_Ball_icon.svg.png" alt="pokeball" />
+        <img class="header_img" src="../src/assets/Poké_Ball_icon.svg.png" alt="pokeball" />
       </section>
       <section>
         <form class="form" action="">
@@ -38,8 +38,8 @@
     <section class="main">
     </section>
     <div class="load_more">
-      <button onclick="cargarMasPokemons()">Cargar mas</button>
+      <button id="loadMore" >Cargar mas</button>
     </div>
-    <script src="/src/index.js"></script>
   </body>
+  <script type="module" src="/src/index.js"></script>
 </html>

@@ -1,10 +1,14 @@
+import {getData} from "../utils/getData.js";
 
-fetch('https://pokeapi.co/api/v2/pokemon/6')
-.then(response => response.json())
-.then(data => {
-    rellenarInfo(data)
-});
+const valores = window.location.search;
 
+  //Creamos la instancia
+const urlParams = new URLSearchParams(valores);
+
+//Accedemos a los valores
+var id = urlParams.get('id');
+
+let data = await getData(id);
 
 function rellenarInfo (data) {
     const image = data.sprites.other.dream_world.front_default;
@@ -32,4 +36,6 @@ function rellenarInfo (data) {
     const abilitiesDom = document.querySelector('.abilities');
     abilitiesDom.append(...allitems);
 
-}
+} 
+
+rellenarInfo(data);
