@@ -1,7 +1,7 @@
-import {getData} from "./getData.js";
-import {createPokemons} from "./createPokemon.js";
-import {buscarPokemon,eliminarPokemons} from "./buscarPokemon.js";
-import {cargarMasPokemons} from "./cargarMasPokemons.js";
+import {getData} from "../getData.js";
+import {createPokemons} from "../createPokemon.js";
+import {buscarPokemon,eliminarPokemons} from "../buscarPokemon.js";
+import {cargarMasPokemons} from "../cargarMasPokemons.js";
 const data = await getData(null,5,0);
 
 addEventListener('load',createPokemons(data.results));
