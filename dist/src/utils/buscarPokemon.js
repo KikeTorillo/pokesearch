@@ -1,4 +1,4 @@
-import { getData } from "../utils/getData.js";
+import { getData } from "./getData.js";
 
 async function buscarPokemon() {
   let busqueda = document.querySelector("#nombre");
@@ -17,7 +17,7 @@ async function buscarPokemon() {
     nameDom.textContent = name;
     const pokemon = document.createElement("a");
     pokemon.classList.add("pokemon");
-    pokemon.setAttribute("href",`../../public/pokemon.html?id=${id}`)
+    pokemon.setAttribute("href",`../../../dist/public/pokemon.html?id=${id}`)
     pokemon.append(imageDom, idDom, nameDom);
     const container = document.querySelector(".main");
     container.append(pokemon);

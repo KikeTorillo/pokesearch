@@ -1,5 +1,5 @@
-import {getData} from "../utils/getData.js";
-import {createPokemons} from "../utils/createPokemon.js";
+import {getData} from "./getData.js";
+import {createPokemons} from "./createPokemon.js";
 
 async function cargarMasPokemons() {
     let pokemonsDom = [...document.querySelectorAll(".pokemon")];
