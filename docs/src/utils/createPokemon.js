@@ -1,4 +1,4 @@
-import {homeInfo} from "./home.js"
+import {homeInfo} from "../pages/home.js"
 
 async function createPokemons(data) {
   const pokemons = await data;
