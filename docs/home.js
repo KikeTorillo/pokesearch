@@ -13,7 +13,7 @@
       nameDom.textContent = name;
       const pokemon = document.createElement("a");
       pokemon.classList.add("pokemon");
-      pokemon.setAttribute("href",`../dist/public/pokemon.html?id=${id}`)
+      pokemon.setAttribute("href",`./pokemon.html?id=${id}`)
       pokemon.append(imageDom, idDom, nameDom);
       allitems.push(pokemon);
     });
