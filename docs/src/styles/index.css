@@ -44,7 +44,7 @@ body {
 }
 .input_container{
   width: 33rem;
-  height: 3rem;
+  height: 4rem;
   border-radius: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -69,9 +69,11 @@ body {
   border: none;
   outline: none;
   background-color: rgba(245, 116, 196, 0.08);
+  font-size: 2rem;
 }
 .search_text::placeholder{
   color: whitesmoke;
+  font-size: 2rem;
 }
 .Type_of_search{
   margin-top: 1rem;
@@ -132,10 +134,13 @@ body {
 
 .pokemon h2 {
   grid-area: 4/2/5/4;
+  font-size: 1.5rem;
 }
 
 .pokemon h3 {
   grid-area: 4/3/5/5;
+  font-size: 1.5rem;
+  margin-left: 1rem;
 }
 
 .load_more {
@@ -162,15 +167,7 @@ body {
     width: 40rem;
     height: 5rem;
   }
-
-  .search_text::placeholder{
-    font-size: 1.6rem;
-  }
-
-  .search_text{
-    font-size: 1.6rem;
-  }
-
+  
 }
 
 

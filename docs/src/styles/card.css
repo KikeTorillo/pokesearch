@@ -30,15 +30,16 @@
 
 .card .card--main--img {
     position: absolute;
-    width: 13rem;
-    height: 13rem;
+    width: 16rem;
+    height: 16rem;
     background-color: #1d2951;
     border: .4rem solid white;
     border-radius: 25rem;
-    top: 5rem;
+    top: 2rem;
 }
 
 .card .card--pokemonname {
+    font-size: 1.8rem;
     margin-top: 7rem;
     display: inline-block;
 }
@@ -55,7 +56,7 @@
     width: 30rem;
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     background-color: #1d2951;
     border-radius: 2rem;
 }
@@ -67,3 +68,18 @@
 .card--pokemon-detail div p {
     color: #f16d71;
 }
+
+ @media (min-width: 700px) {
+    .container .card {
+        width: 70rem;
+    }
+
+    .card--pokemon-detail {
+        margin-top: 1rem;
+        padding-top: 2rem;
+        height: 15rem;
+        width: 50rem;
+      
+    }
+
+  }  

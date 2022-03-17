@@ -2,7 +2,8 @@ import { getData } from "./getData.js";
 
 async function buscarPokemon() {
   let busqueda = document.querySelector("#nombre");
-  let data = await getData(busqueda.value);
+  let nombre = busqueda.value;
+  let data = await getData(nombre.toLowerCase());
   if (data != -1) {
     eliminarPokemons();
     eliminarBoton();
