@@ -3,7 +3,7 @@ import {createPokemons} from "./createPokemon.js";
 
 async function cargarMasPokemons() {
     let pokemonsDom = [...document.querySelectorAll(".pokemon")];
-    let cargarMas = pokemonsDom.length + 1;
+    let cargarMas = pokemonsDom.length;
     let data = await getData(null,5,cargarMas);
     await createPokemons(data.results);
   }
