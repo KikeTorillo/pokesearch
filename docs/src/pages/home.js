@@ -19,6 +19,8 @@
     });
     const container = document.querySelector(".main");
     container.append(...allitems);
+    let botonCargarMas = document.querySelector('#loadMore');
+    botonCargarMas.disabled = false;
   }
 
   export {homeInfo}; 

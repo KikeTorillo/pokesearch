@@ -98,6 +98,7 @@ body {
   align-items: center;
   row-gap: 3rem;
   column-gap: 3rem;
+  min-height: 61.5rem;
 }
 
 .pokemon {
@@ -162,6 +163,33 @@ body {
   font-weight: 700;
 }
 
+.footer {
+  height: 10rem;
+  width: 100%;
+  background-color: #f16d71;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.github {
+ height: 9rem;
+
+}
+
+.github img {
+  height: 100%;
+}
+
+.link {
+  height: 9rem;
+}
+
+.link img {
+  height: 100%;
+}
+
 @media (min-width: 600px) {
   .input_container{
     width: 40rem;
@@ -169,7 +197,6 @@ body {
   }
   
 }
-
 
 
 

@@ -22,5 +22,5 @@ elInput.addEventListener("keydown", function (e) {
 }); 
 
 let botonCargarMas = document.querySelector('#loadMore');
-botonCargarMas.addEventListener("click",cargarMasPokemons)
+botonCargarMas.addEventListener("click",await cargarMasPokemons)
 
